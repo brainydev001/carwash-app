@@ -5,15 +5,20 @@
 {{-- toolbar --}}
 <div class="container-fluid">
     {{-- Create --}}
-    <button class="btn btn-sm btn-primary mr-2" data-toggle="modal" data-target="#createRoleModal">
-        Create role
+    <button class="btn btn-sm btn-primary mr-2" data-toggle="modal" data-target="#craeteServiceModal">
+        Create service
     </button>
-    {{-- Create --}}
-    <button class="btn btn-sm btn-primary mr-2" data-toggle="modal" data-target="#craetePermissionModal">
-        Create permission
+    {{-- all services --}}
+    <a href="{{ url('all-services') }}" class="btn btn-sm btn-primary mr-2">
+        All services
+    </a>
+    {{-- Create body type --}}
+    <button class="btn btn-sm btn-primary mr-2" data-toggle="modal" data-target="#craeteBodyTypeModal">
+        Create body type
     </button>
 </div>
 
-
+{{-- modals --}}
+@include('services.modals')
 
 @endsection

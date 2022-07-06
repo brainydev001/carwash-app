@@ -47,6 +47,16 @@ Route::group(['middleware' => ['auth']], function(){
      */
     Route::group([], function(){
         Route::get('services/manager','ServicesController@index');
+        Route::get('service/{service:id}','ServicesController@show');
+        Route::get('all-services','ServicesController@services');
+        Route::post('add-body-type/{id}','ServicesController@addBodyType')->name('add-body-type');
+    });
+
+    /**
+     * Sale terminal routes
+     */
+    Route::group([], function(){
+        Route::get('sale-terminal','SaleTerminalController@index');
     });
 
     /**

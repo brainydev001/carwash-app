@@ -19,18 +19,23 @@
             </a>
         </div>
 
+        {{-- sale terminal --}}
+        <a href="{{ url('sale-terminal') }}" class="btn btn-success w-100 mb-3">
+            <i class="fe fe-user"></i>
+            Sale terminal
+        </a>
+
         {{-- check if sections has items --}}
         @if (count($sections) > 0)
 
             {{-- loop through sections --}}
             @foreach ($sections as $section)
-
                 {{-- add section title if not null --}}
                 @if ($section['title'] != null)
                     {{-- section title --}}
                     <p class="text-muted nav-heading mt-2 mb-1">
                         <span>{{ $section['title'] }}</span>
-                    </p>   
+                    </p>
                 @endif
 
                 {{-- check if section has menu items --}}
@@ -46,22 +51,21 @@
                                     <span class="ml-3 item-text">{{ $menuItem['name'] }}</span>
 
                                     {{-- add notification badge to item --}}
-                                    @if (array_key_exists("badge",$menuItem) && $menuItem['badge'] > 0)
+                                    @if (array_key_exists('badge', $menuItem) && $menuItem['badge'] > 0)
                                         <span class="badge badge-pill p-1 badge-primary">
                                             {{ $menuItem['badge'] }}
-                                        </span>    
+                                        </span>
                                     @endif
 
                                 </a>
-                            </li>    
+                            </li>
                         @endforeach
 
-                    </ul>  
+                    </ul>
                 @endif
-
             @endforeach
 
         @endif
-        
+
     </nav>
 </aside>

@@ -30,7 +30,7 @@
 <body class="vertical  dark">
 
     {{-- alerts --}}
-    @include('messages.alerts')
+    {{-- @include('messages.alerts') --}}
 
     {{-- main wrapper --}}
     <div class="wrapper">
