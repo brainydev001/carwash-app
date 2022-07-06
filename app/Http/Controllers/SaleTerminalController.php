@@ -15,4 +15,12 @@ class SaleTerminalController extends Controller
             'services'
         ));
     }
+
+    /**
+     * Add to cart
+     */
+    public function addToCart($service_id, $body_type_id)
+    {
+        return view('sale_terminal.checkout');
+    }
 }

@@ -6,6 +6,11 @@
 
     <div class="row container-fluid">
         <div class="col-md-8">
+            <div class="mt-3 mb-3">
+                <a href="{{ url('dashboard') }}" class="">
+                    Dashboard
+                </a>
+            </div>
             {{-- search --}}
             <div class="form-group p-2">
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search services">

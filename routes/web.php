@@ -57,6 +57,7 @@ Route::group(['middleware' => ['auth']], function(){
      */
     Route::group([], function(){
         Route::get('sale-terminal','SaleTerminalController@index');
+        Route::get('add-to-cart/{service_id}/{body_type_id}', 'SaleTerminalController@addToCart');
     });
 
     /**

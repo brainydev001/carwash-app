@@ -14,19 +14,15 @@
                 </button>
             </div>
             <div class="modal-body">
-
-                @foreach ($service->bodyTypes as $body_type)
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="bodyTypeRadio{{ $body_type->id }}"
-                            value="option1">
-                        <label class="form-check-label" for="bodyTypeRadio{{ $body_type->id }}">
-                            {{ $body_type->name }}
-                        </label>
-                    </div>    
-                @endforeach
-                
-
-
+                <div class="row">
+                    @foreach ($service->bodyTypes as $body_type)
+                        <div class="p-2">
+                            <a href="{{ url('add-to-cart/'.$service->id.'/'.$body_type->id) }}" class="btn btn-secondary">
+                                {{ $body_type->name }}
+                            </a>
+                        </div>    
+                    @endforeach
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="submit" class="btn btn-primary" form="addBodyTypeForm">Select body
