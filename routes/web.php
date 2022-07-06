@@ -50,6 +50,15 @@ Route::group(['middleware' => ['auth']], function(){
     });
 
     /**
+     * Customer routes
+     */
+    Route::group([], function(){
+        Route::get('customers/manager','CustomersController@index');
+        Route::get('customer/bookings','CustomersController@bookings');
+        Route::get('booking','CustomersController@singleBooking');
+    });
+
+    /**
      * Mail routes
      * NOTE : has routes outside admin route group
      */
