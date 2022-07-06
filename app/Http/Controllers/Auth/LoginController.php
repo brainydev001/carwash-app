@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -26,7 +27,25 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    // protected $redirectTo = RouteServiceProvider::HOME;
+    public function redirectTo()
+    {
+        return '/';
+    }
+
+    /**
+     * Logout redirect
+     */
+    public function logout(Request $request, $origin = null) {
+        auth()->logout();
+
+        // from email otp link
+        if($origin == 'otp'){
+            return redirect('/login')->with('info-message','Login with your email and your one time password to continue');    
+        }
+
+        return redirect('/login');
+    }
 
     /**
      * Create a new controller instance.
