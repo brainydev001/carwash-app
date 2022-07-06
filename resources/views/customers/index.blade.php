@@ -5,9 +5,11 @@
 {{-- toolbar --}}
 <div class="container-fluid">
     {{-- Create --}}
-    <button class="btn btn-sm btn-primary mr-2" data-toggle="modal" data-target="#createRoleModal">
-        Add Booking
-    </button>
+    <a href="{{ url('sale-terminal') }}">
+        <button class="btn btn-sm btn-primary mr-2">
+            Add Booking 
+        </button>
+    </a>
 </div>
 
 

@@ -3,13 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Customer;
 
 class CustomersController extends Controller
 {
     // customer index page
     public function index()
     {
-        return view('customers.index');
+        $customers = Customer::all();
+        return view('customers.index',compact(
+            'customers'
+        ));
+    }
+
+    /**
+     * Show customers
+     */
+    public function show(Customer $customers)
+    {
+        return view('customers.index',compact(
+            'customers'
+        ));
     }
 
     // customer booking  page

@@ -1,4 +1,9 @@
-@extends('layouts.admin',['title' => 'Brian Ngugi'])
+@extends('layouts.admin',[
+    'title' => 'Brian Ngugi',
+    'breadcrumbs' => [
+        'Customers List' => url('customers/manager')
+    ]
+])
 
 @section('page')
 

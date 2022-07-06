@@ -8,6 +8,7 @@
                     <div class="col-md-12">
                         <div class="card shadow">
                             <div class="card-body">
+                                @if (count($customers) > 0)
                                 <!-- table -->
                                 <table class="table datatables" id="customersDataTable">
                                     <thead>
@@ -23,12 +24,13 @@
                                         </tr>
                                     </thead>
                                     <tbody>
+                                        @foreach ($customers as $key => $customer)
                                         <tr>
-                                            <td>1</td>
-                                            <td>Brian Ngugi</td>
-                                            <td>brian@gmail.com</td>
-                                            <td>07954221458</td>
-                                            <td>KCA 1234 Z</td>
+                                            <td>{{ $key + 1 }}</td>
+                                            <td>{{ $customer->name }}</td>
+                                            <td>{{ $customer->email }}</td>
+                                            <td>{{ $customer->phone_number }}</td>
+                                            <td>{{ $customer->plate_number }}</td>
                                             <td>Staff Ngugi</td>
                                             <td>30 hrs ago</td>
                                             <td>
@@ -39,12 +41,16 @@
                                                 </a>
                                             </td>
                                         </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
-                                {{-- <div class="alert alert-warning">
+                                @else
+                                <div class="alert alert-warning">
                                     No Customer Bookings Available.
                                     <small>Click on the toolbar to perform any action</small>
-                                </div> --}}
+                                </div>
+                                @endif
+
                             </div>
                         </div>
                     </div> <!-- simple table -->

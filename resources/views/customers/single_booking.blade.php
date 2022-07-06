@@ -1,4 +1,10 @@
-@extends('layouts.admin',['title' => 'Booking number : 34882677'])
+@extends('layouts.admin',[
+    'title' => 'Booking number : 34882677',
+    'breadcrumbs' => [
+        'Customers List' => url('customers/manager'),
+        'Bookings' => url('customer/bookings'),
+    ]
+])
 
 @section('page')
 

@@ -24,7 +24,7 @@
                                         @foreach ($users as $key => $user)
                                             <tr>
                                                 <td>{{ $key + 1 }}</td>
-                                                <td>
+                                                <td> 
                                                     <div>
                                                         {{ $user->name }}
                                                     </div>
