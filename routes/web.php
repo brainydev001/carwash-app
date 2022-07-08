@@ -61,6 +61,22 @@ Route::group(['middleware' => ['auth']], function(){
     });
 
     /**
+     * Staff routes
+     */
+    Route::group([], function(){
+        Route::get('staff/manager','StaffController@index');
+        Route::get('all-staff','StaffController@staffs');
+    });
+
+    /**
+     * Expenses routes
+     */
+    Route::group([], function(){
+        Route::get('expenses/manager','ExpenseController@index');
+        Route::get('all-expenses','ExpenseController@expenses');
+    });
+
+    /**
      * Mail routes
      * NOTE : has routes outside admin route group
      */

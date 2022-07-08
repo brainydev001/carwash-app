@@ -19,7 +19,7 @@
     <div class="form-group">
         <label for="exampleInputEmail1">Price</label>
         <input type="number" name="price" class="form-control  @error('price') is-invalid @enderror" wire:model="price" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Role name">
+            placeholder="price">
         @error('price')
             <span class="text-danger">
                 {{ $message }}

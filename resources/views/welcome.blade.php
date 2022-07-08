@@ -20,7 +20,7 @@
     {{-- main card --}}
     <div class="card p-4 mt-3">
         <h3 class="text-center m-auto col-md-6">
-            Welcome to Mneti multi purpose admin software.
+            Welcome to minet car wash system
         </h3>
         <div class="mt-3 mb-3 text-center">
             @guest

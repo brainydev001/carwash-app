@@ -24,4 +24,14 @@
             [16, 32, 64, "All"]
         ]
     })
+
+    // users
+    $('#staffDataTable').DataTable({
+        autoWidth: true,
+        "lengthMenu": [
+            [16, 32, 64, -1],
+            [16, 32, 64, "All"]
+        ]
+    })
+
 })()

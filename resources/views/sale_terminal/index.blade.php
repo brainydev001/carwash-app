@@ -21,11 +21,9 @@
                 @foreach ($services as $service)
                     <div class="col-md-4 p-3">
                         <div class="card">
+                            <h4 class="text-white p-2">Service Name</h4>
                             <div class="card-header">
                                 {{ $service->name }}
-                            </div>
-                            <div class="card-body">
-                                {{ $service->description }}
                             </div>
                             <div class="card-footer">
                                 @livewire('sale-terminal.add-to-cart-modal', ['service' => $service], key($service->id))
