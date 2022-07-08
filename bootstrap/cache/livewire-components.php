@@ -6,6 +6,7 @@
   'navigation.side-nav' => 'App\\Http\\Livewire\\Navigation\\SideNav',
   'navigation.top-nav' => 'App\\Http\\Livewire\\Navigation\\TopNav',
   'sale-terminal.add-to-cart-modal' => 'App\\Http\\Livewire\\SaleTerminal\\AddToCartModal',
+  'sale-terminal.checkout-form' => 'App\\Http\\Livewire\\SaleTerminal\\CheckoutForm',
   'services.add-body-type' => 'App\\Http\\Livewire\\Services\\AddBodyType',
   'services.create-body-type' => 'App\\Http\\Livewire\\Services\\CreateBodyType',
   'services.create-service' => 'App\\Http\\Livewire\\Services\\CreateService',

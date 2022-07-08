@@ -30,9 +30,15 @@ class SideNav extends Component
             // user and security
             [
                 'title' => 'Users & Security',
+<<<<<<< HEAD
                 'menuItems' => [
                     ['name' => 'Users', 'icon' => 'fe-users', 'url' => url('users/manager'), 'badge' => 1],
                     ['name' => 'Access control', 'icon' => 'fe-lock', 'url' => url('access_control/manager')]
+=======
+                'menuItems' =>[
+                    ['name' => 'Users', 'icon' => 'fe-users', 'url' => url('users/manager'), 'badge' => 2],
+                    ['name' => 'Access control', 'icon' => 'fe-lock', 'url' => url('access_control/manager')] 
+>>>>>>> 432fe723b024d8fa02d6434579f173a5a264cc18
                 ]
             ],
             // Services

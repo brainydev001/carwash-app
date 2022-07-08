@@ -13,19 +13,20 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('customers', function (Blueprint $table) {
+        Schema::create('documents', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('phone_number');
-            $table->string('plate_number')->unique();
-            $table->string('model');
-            $table->string('make');
+            $table->foreignId('customer_id');
+            $table->string('type');
+            $table->integer('code');
+            $table->string('number');
+            $table->foreignId('price_id');
+            $table->boolean('isPaid');
+            $table->string('due_date');
+            $table->longText('notes')->nullable();
+            $table->integer('tax')->nullable();
             $table->foreignId('created_by');
             $table->foreignId('updated_by')->nullable();
-            $table->string('email')->nullable();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->longText('notes')->nullable();
-            $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -37,6 +38,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('documents');
     }
 };

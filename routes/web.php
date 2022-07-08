@@ -58,6 +58,7 @@ Route::group(['middleware' => ['auth']], function(){
     Route::group([], function(){
         Route::get('sale-terminal','SaleTerminalController@index');
         Route::get('add-to-cart/{service_id}/{body_type_id}', 'SaleTerminalController@addToCart');
+        Route::post('checkout/{price_id}', 'SaleTerminalController@checkout')->name('checkout');
     });
 
     /**

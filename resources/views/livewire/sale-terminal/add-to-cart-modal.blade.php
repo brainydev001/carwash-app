@@ -1,6 +1,6 @@
 <div class="text-right">
     <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#addToCartModal{{ $service->id }}">
-        Choose Body Type
+        Add to cart
     </button>
 </div>
 <div class="modal fade" id="addToCartModal{{ $service->id }}" tabindex="-1" role="dialog"
@@ -15,7 +15,11 @@
             </div>
             <div class="modal-body">
                 <div class="row">
+<<<<<<< HEAD
                     {{-- @foreach ($service->bodyTypes as $body)
+=======
+                    @foreach ($service->bodyTypes as $body_type)
+>>>>>>> 432fe723b024d8fa02d6434579f173a5a264cc18
                         <div class="p-2">
                             <a href="{{ url('add-to-cart/' . $service->id . '/' . $body_type->id) }}"
                                 class="btn btn-secondary">
@@ -31,10 +35,6 @@
                     </div>
                     
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary" form="addBodyTypeForm">Select body
-                    type</button>
             </div>
         </div>
     </div>
