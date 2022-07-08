@@ -30,9 +30,15 @@ class SideNav extends Component
             // user and security
             [
                 'title' => 'Users & Security',
+<<<<<<< HEAD
                 'menuItems' => [
                     ['name' => 'Users', 'icon' => 'fe-users', 'url' => url('users/manager'), 'badge' => 1],
                     ['name' => 'Access control', 'icon' => 'fe-lock', 'url' => url('access_control/manager')]
+=======
+                'menuItems' =>[
+                    ['name' => 'Users', 'icon' => 'fe-users', 'url' => url('users/manager'), 'badge' => 2],
+                    ['name' => 'Access control', 'icon' => 'fe-lock', 'url' => url('access_control/manager')] 
+>>>>>>> 0db528c182e0c94e15bf55e3e4e6a0d7b97ba007
                 ]
             ],
             // Services
@@ -56,6 +62,13 @@ class SideNav extends Component
                 'title' => 'Expenses',
                 'menuItems' => [
                     ['name' => 'Expenses', 'icon' => 'fe-briefcase', 'url' => url('expenses/manager')]
+                ]
+            ],
+            // Customers
+            [
+                'title' => 'Customers',
+                'menuItems' =>[
+                    ['name' => 'Customers', 'icon' => 'fe-users', 'url' => url('customers/manager')]   
                 ]
             ]
         ];
