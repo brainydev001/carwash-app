@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>Mneti admin</title>
+    <title>Minat admin</title>
     <!-- Simple bar CSS -->
     <link rel="stylesheet" href="{{ asset('admin/css/simplebar.css') }}">
     <!-- Fonts CSS -->

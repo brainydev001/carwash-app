@@ -10,4 +10,6 @@ class BodyType extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+
 }
