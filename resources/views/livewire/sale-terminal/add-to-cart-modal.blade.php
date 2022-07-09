@@ -15,11 +15,7 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-<<<<<<< HEAD
                     {{-- @foreach ($service->bodyTypes as $body)
-=======
-                    @foreach ($service->bodyTypes as $body_type)
->>>>>>> 432fe723b024d8fa02d6434579f173a5a264cc18
                         <div class="p-2">
                             <a href="{{ url('add-to-cart/' . $service->id . '/' . $body_type->id) }}"
                                 class="btn btn-secondary">

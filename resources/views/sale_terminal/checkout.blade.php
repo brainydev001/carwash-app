@@ -7,7 +7,6 @@
 
 <div class="row mt-3 mb-3 container-fluid">
     <div class="col-md-8 p-2">
-<<<<<<< HEAD
         <div class="card shadow mt-4">
             <h4>Customer Information</h4>
             <div class="card-body">
@@ -124,22 +123,6 @@
                     </div>
                 </div>
         
-=======
-        <div class="card">
-            <div class="card-header">
-                <h4>Checkout</h4>
-            </div>
-            <div class="card-body">
-                
-                {{-- checkout form --}}
-                @livewire('sale-terminal.checkout-form',['price'=>$price])
-
-            </div>
-            <div class="card-footer text-right">
-                <button form="saleTerminalCheckoutForm" class="btn btn-primary">
-                    Confirm checkout
-                </button>
->>>>>>> 432fe723b024d8fa02d6434579f173a5a264cc18
             </div>
         </div>
     </div>
