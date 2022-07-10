@@ -28,7 +28,7 @@
             <a class="nav-link dropdown-toggle text-muted pr-0" href="#" id="navbarDropdownMenuLink" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="avatar avatar-sm mt-2">
-                    <img src="{{ asset('admin/assets/avatars/face-1.jpg') }}" alt="..."
+                    <img src="{{ asset('images/minat.jpg') }}" alt="" width="60"
                         class="avatar-img rounded-circle">
                 </span>
             </a>

@@ -94,7 +94,10 @@ Route::group(['middleware' => ['auth']], function(){
         Route::get('documents/manager','DocumentsController@index');
         Route::get('invoices/manager','DocumentsController@getInvoice');
         Route::get('recieps/manager','DocumentsController@getReciepts');
+        Route::get('commissions/manager','DocumentsController@getCommissions');
         Route::get('single_invoice/{id}','DocumentsController@invoice');
+        Route::get('single_reciept/{id}','DocumentsController@reciept');
+        Route::post('store/{id}','DocumentsController@store')->name('store');
     });
 
     /**

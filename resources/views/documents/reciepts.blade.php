@@ -6,16 +6,8 @@
 ])
 
 @section('page')
-    @extends('layouts.admin', [
-        'title' => 'All Reciepts',
-        'breadcrumbs' => [
-            'Documents' => url('documents/manager'),
-        ],
-    ])
 
-@section('page')
     {{-- staff table --}}
-    <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12">
                 <div class="row my-4">
@@ -29,7 +21,7 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>Cudtomer Name</th>
+                                                <th>Customer Name</th>
                                                 <th>Email</th>
                                                 <th>Phone Number</th>
                                                 <th>Amount Due</th>
@@ -98,9 +90,7 @@
                                                             <span class="text-muted sr-only">Action</span>
                                                         </button>
                                                         <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="#">View</a>
-                                                            <a class="dropdown-item" href="#">Remove</a>
-                                                            <a class="dropdown-item" href="#">Assign</a>
+                                                            <a class="dropdown-item" href="{{ url('single_reciept/'.$reciept->id) }}">View</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -118,8 +108,8 @@
                 </div> <!-- end section -->
             </div> <!-- .col-12 -->
         </div> <!-- .row -->
-    </div>
+
 @endsection
 
 
-@endsection
+

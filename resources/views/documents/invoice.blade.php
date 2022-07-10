@@ -6,6 +6,8 @@
 ])
 
 @section('page')
+{{-- alert --}}
+@include('messages.alerts')
     {{-- staff table --}}
     <div class="container-fluid">
         <div class="row justify-content-center">
@@ -21,7 +23,7 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>Cudtomer Name</th>
+                                                <th>Customer Name</th>
                                                 <th>Email</th>
                                                 <th>Phone Number</th>
                                                 <th>Amount Due</th>

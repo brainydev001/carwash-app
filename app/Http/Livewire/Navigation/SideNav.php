@@ -67,9 +67,9 @@ class SideNav extends Component
             ],
             // Documents
             [
-                'title' => 'Documents',
+                'title' => 'Reports',
                 'menuItems' => [
-                    ['name' => 'Documents', 'icon' => 'fe-users', 'url' => url('documents/manager')]
+                    ['name' => 'Reports', 'icon' => 'fe-briefcase', 'url' => url('documents/manager')]
                 ]
             ]
         ];

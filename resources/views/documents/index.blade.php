@@ -12,6 +12,10 @@
     <a href="{{ url('recieps/manager') }}" class="btn btn-sm btn-primary mr-2">
         Reciepts
     </a>
+    {{-- commissions --}}
+    <a href="{{ url('commissions/manager') }}" class="btn btn-sm btn-primary mr-2">
+        Commissions
+    </a>
 </div>
 
 

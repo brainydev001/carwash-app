@@ -38,7 +38,12 @@
         {{-- commission --}}
         <div class="form-group">
             <label for="exampleInputEmail1">Commission</label>
-            <textarea class="form-control  @error('commission') is-invalid @enderror" wire:model="commission" id="exampleFormControlTextarea1" ></textarea>
+            <select class="form-control  @error('commission') is-invalid @enderror" wire:model="commission" id="exampleFormControlTextarea1">
+                <option disabled>Commission in %</option>
+                <option value="5">5%</option>
+                <option value="20">20%</option>
+                <option value="25">25%</option>
+            </select>
             @error('commission')
                 <span class="text-danger">
                     {{ $message }}

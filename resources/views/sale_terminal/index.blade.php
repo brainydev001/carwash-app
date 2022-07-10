@@ -5,7 +5,7 @@
     @include('messages.alerts')
 
     <div class="row container-fluid">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="mt-3 mb-3">
                 <a href="{{ url('dashboard') }}" class="">
                     Dashboard
@@ -21,7 +21,6 @@
                 @foreach ($services as $service)
                     <div class="col-md-4 p-3">
                         <div class="card">
-                            <h4 class="text-white p-2">Service Name</h4>
                             <div class="card-header">
                                 {{ $service->name }}
                             </div>

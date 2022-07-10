@@ -52,10 +52,12 @@
                                     <i class="fe fe-16 fe-user text-white mb-0"></i>
                                 </span>
                             </div>
-                            {{-- commission --}}
-                            <div class="col">
-                                <h4 class="small text-white mb-0">Commission</h4>
-                            </div>
+                            <a href="{{ url('commissions/manager') }}">
+                                {{-- commission --}}
+                                <div class="col">
+                                    <h4 class="small text-white mb-0">Commission</h4>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -90,9 +92,8 @@
                             </div>
                             {{-- monthly sales --}}
                             <div class="col pr-0">
-                                <p class="small text-white mb-0">Monthly Sales(ksh)</p>
-                                <span class="h3 mb-0 text-white">0</span>
-                                <span class="small text-muted">+0%</span>
+                                <p class="small text-white mb-0">Total Sales(ksh)</p>
+                                <span class="h3 mb-0 text-white">{{ $sales }}</span>
                             </div>
                         </div>
                     </div>
@@ -110,8 +111,7 @@
                             {{-- total bookings --}}
                             <div class="col pr-0">
                                 <p class="small text-muted mb-0">Total Bookings</p>
-                                <span class="h3 mb-0">0</span>
-                                <span class="small text-success">0%</span>
+                                <span class="h3 mb-0">{{ count($documents) }}</span>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@
                                 <p class="small text-muted mb-0">Total Customers</p>
                                 <div class="row align-items-center no-gutters">
                                     <div class="col-auto">
-                                        <span class="h3 mr-2 mb-0">0</span>
+                                        <span class="h3 mr-2 mb-0">{{ count($customers) }}</span>
                                     </div>
                                 </div>
                             </div>
@@ -147,12 +147,11 @@
                                     <i class="fe fe-16 fe-activity text-white mb-0"></i>
                                 </span>
                             </div>
-                            <div class="col">
-                                <p class="small text-muted mb-0">Reports</p>
-                                <span class="h4 mb-0">
-                                    <i class="fe-layers"></i>
-                                </span>
-                            </div>
+                            <a href="{{ url('documents/manager') }}">
+                                <div class="col">
+                                    <p class="small text-muted mb-0">Reports</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>

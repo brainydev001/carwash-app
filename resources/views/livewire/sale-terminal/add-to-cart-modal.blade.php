@@ -1,6 +1,6 @@
 <div class="text-right">
     <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#addToCartModal{{ $service->id }}">
-        Add to cart
+        Book
     </button>
 </div>
 <div class="modal fade" id="addToCartModal{{ $service->id }}" tabindex="-1" role="dialog"
@@ -15,6 +15,7 @@
             </div>
             <div class="modal-body">
                 <div class="row">
+                    
                     @foreach ($service->bodyTypes as $body)
                         <div class="p-2">
                             <a href="{{ url('add-to-cart/' . $service->id . '/' . $body->id) }}"
@@ -23,6 +24,7 @@
                             </a>
                         </div>
                     @endforeach
+                    
                 </div>
             </div>
         </div>

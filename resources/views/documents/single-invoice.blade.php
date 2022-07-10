@@ -19,7 +19,7 @@
                         <div class="card-body p-5">
                             <div class="row mb-5">
                                 <div class="col-12 text-center mb-4">
-                                    <img src="./assets/images/logo.svg" class="navbar-brand-img brand-sm mx-auto mb-4"
+                                    <img src="{{ asset('images/minat.jpg') }}" class="navbar-brand-img brand-sm mx-auto mb-4"
                                         alt="...">
                                     <h2 class="mb-0 text-uppercase">Invoice</h2>
                                     <p class="text-muted"> Minat <br /> Nairobi. </p>
@@ -108,16 +108,16 @@
                                         <td class="text-right">
                                             @php
                                                 // get customer email
-                                                $bodyType_id = DB::table('prices')
+                                                $body_type_id = DB::table('prices')
                                                     ->where([['id', '=', $invoice->price_id]])
                                                     ->pluck('body_type_id')
                                                     ->first();
-                                                $bodyType_name = DB::table('body_types')
-                                                ->where([['id', '=', $bodyType_id]])
+                                                $body_type_name = DB::table('body_types')
+                                                ->where([['id', '=', $body_type_id]])
                                                 ->pluck('name')
                                                 ->first();    
                                             @endphp
-                                            {{ $bodyType_name }}
+                                            {{ $body_type_name }}
                                         </td>
                                         <td class="text-right">{{ $invoice->code }}</td>
                                     </tr>
@@ -125,7 +125,7 @@
                             </table>
                             <div class="row mt-5">
                                 <div class="col-2 text-center">
-                                    <img src="./assets/images/qrcode.svg" class="navbar-brand-img brand-sm mx-auto my-4"
+                                    <img src="{{ asset('images/minat.jpg') }}" class="navbar-brand-img brand-sm mx-auto my-4"
                                         alt="...">
                                 </div>
                                 <div class="col-md-5">
@@ -138,10 +138,6 @@
                                         <p class="mb-2 h6">
                                             <span class="text-muted">Subtotal : </span>
                                             <strong>{{ $invoice->code }}</strong>
-                                        </p>
-                                        <p class="mb-2 h6">
-                                            <span class="text-muted">VAT (10%) : </span>
-                                            <strong>14%</strong>
                                         </p>
                                         <p class="mb-2 h6">
                                             <span class="text-muted">Total : </span>

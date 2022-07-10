@@ -33,20 +33,5 @@ class CreateReciepts extends Component
         return view('livewire.reciepts.create-reciepts');
     }
 
-    public function submit()
-    {
-        // validation
-        $data = $this->validate();
-        
-        $staff_id = $data['name'];
-        $commission = Staff::where([
-            ['id', '=' , $staff_id]
-        ])->pluck('commission')->first();
-
-
-        // store
-        // Expense::create($data);
-
-        // return redirect()->to('expenses/manager')->with('success-message', 'Expense created');
-    }
+    
 }
