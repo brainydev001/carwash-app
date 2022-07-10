@@ -38,7 +38,7 @@ class DocumentsController extends Controller
          * From documents table get all which isPaid is true
          */
         $reciepts = Document::where([
-            ['isPaid','=',true]
+            ['isPaid','=',false]
         ])->orderBy('id','desc')->get();
 
         return view('documents.invoice',  compact(
