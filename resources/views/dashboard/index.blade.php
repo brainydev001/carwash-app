@@ -34,9 +34,11 @@
                                 </span>
                             </div>
                             {{-- total bookings --}}
-                            <div class="col pr-0">
-                                <p class="small text-white mb-0">Staff </p>
-                            </div>
+                            <a href="{{ url('staff/manager') }}">
+                                <div class="col pr-0">
+                                    <p class="small text-white mb-0">Staff </p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -89,8 +91,8 @@
                             {{-- monthly sales --}}
                             <div class="col pr-0">
                                 <p class="small text-white mb-0">Monthly Sales(ksh)</p>
-                                <span class="h3 mb-0 text-white">1250</span>
-                                <span class="small text-muted">+5.5%</span>
+                                <span class="h3 mb-0 text-white">0</span>
+                                <span class="small text-muted">+0%</span>
                             </div>
                         </div>
                     </div>
@@ -108,8 +110,8 @@
                             {{-- total bookings --}}
                             <div class="col pr-0">
                                 <p class="small text-muted mb-0">Total Bookings</p>
-                                <span class="h3 mb-0">1,869</span>
-                                <span class="small text-success">+16.5%</span>
+                                <span class="h3 mb-0">0</span>
+                                <span class="small text-success">0%</span>
                             </div>
                         </div>
                     </div>
@@ -128,7 +130,7 @@
                                 <p class="small text-muted mb-0">Total Customers</p>
                                 <div class="row align-items-center no-gutters">
                                     <div class="col-auto">
-                                        <span class="h3 mr-2 mb-0"> 826</span>
+                                        <span class="h3 mr-2 mb-0">0</span>
                                     </div>
                                 </div>
                             </div>

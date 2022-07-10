@@ -1,13 +1,11 @@
-<form action="{{ route('checkout',['price_id' => $price->id]) }}" id="saleTerminalCheckoutForm" class="row" method="POST">
-    @csrf
-
+<div class="row">
     <div class="form-group col-md-6">
         <label for="exampleInputEmail1">Plate number</label>
         <input type="text" name="plate_number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
             placeholder="Plate number">
         @error('plate_number')
             <small id="emailHelp" class="form-text text-danger">
-                {{$message}}
+                {{ $message }}
             </small>
         @enderror
 
@@ -19,18 +17,18 @@
             placeholder="Full Name">
         @error('name')
             <small id="emailHelp" class="form-text text-danger">
-                {{$message}}
+                {{ $message }}
             </small>
         @enderror
     </div>
 
     <div class="form-group col-md-6">
         <label for="exampleInputEmail1">Phone number</label>
-        <input type="text" name="phone_number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Plate number">
+        <input type="text" name="phone_number" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp" placeholder="Phone number">
         @error('phone_number')
             <small id="emailHelp" class="form-text text-danger">
-                {{$message}}
+                {{ $message }}
             </small>
         @enderror
     </div>
@@ -38,7 +36,7 @@
     <div class="form-group col-md-6">
         <label for="exampleInputEmail1">Email</label>
         <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Full Name">
+            placeholder="email">
         <small id="emailHelp" class="form-text text-primary">
             optional
         </small>
@@ -47,10 +45,10 @@
     <div class="form-group col-md-6">
         <label for="exampleInputEmail1">Car make</label>
         <input type="text" name="make" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Plate number">
+            placeholder="Car make">
         @error('make')
             <small id="emailHelp" class="form-text text-danger">
-                {{$message}}
+                {{ $message }}
             </small>
         @enderror
     </div>
@@ -58,10 +56,10 @@
     <div class="form-group col-md-6">
         <label for="exampleInputEmail1">Car model</label>
         <input type="text" name="model" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-            placeholder="Full Name">
+            placeholder="Car model">
         @error('model')
             <small id="emailHelp" class="form-text text-danger">
-                {{$message}}
+                {{ $message }}
             </small>
         @enderror
     </div>
@@ -73,5 +71,4 @@
             optional
         </small>
     </div>
-
-</form>
+</div>

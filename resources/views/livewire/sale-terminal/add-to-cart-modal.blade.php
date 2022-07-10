@@ -15,21 +15,14 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    {{-- @foreach ($service->bodyTypes as $body)
+                    @foreach ($service->bodyTypes as $body)
                         <div class="p-2">
-                            <a href="{{ url('add-to-cart/' . $service->id . '/' . $body_type->id) }}"
+                            <a href="{{ url('add-to-cart/' . $service->id . '/' . $body->id) }}"
                                 class="btn btn-secondary">
-                                {{ $body_type->name }}
+                                {{ $body->name }}
                             </a>
                         </div>
-                    @endforeach --}}
-                    <div class="p-2">
-                        <a href="{{ url('add-to-cart/' . $service->id . '/' . $service->id) }}"
-                            class="btn btn-secondary">
-                            {{ $service->name }}
-                        </a>
-                    </div>
-                    
+                    @endforeach
                 </div>
             </div>
         </div>

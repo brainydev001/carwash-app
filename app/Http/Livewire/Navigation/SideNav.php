@@ -61,8 +61,15 @@ class SideNav extends Component
             // Customers
             [
                 'title' => 'Customers',
-                'menuItems' =>[
-                    ['name' => 'Customers', 'icon' => 'fe-users', 'url' => url('customers/manager')]   
+                'menuItems' => [
+                    ['name' => 'Customers', 'icon' => 'fe-users', 'url' => url('customers/manager')]
+                ]
+            ],
+            // Documents
+            [
+                'title' => 'Documents',
+                'menuItems' => [
+                    ['name' => 'Documents', 'icon' => 'fe-users', 'url' => url('documents/manager')]
                 ]
             ]
         ];

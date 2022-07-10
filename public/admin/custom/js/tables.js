@@ -5,12 +5,11 @@
 /**
  *  Datatables
  */
-(function(){
+(function() {
 
-    $('#usersDataTable').DataTable(
-        {
-          autoWidth: true,
-          "lengthMenu": [
+    $('#usersDataTable').DataTable({
+        autoWidth: true,
+        "lengthMenu": [
             [16, 32, 64, -1],
             [16, 32, 64, "All"]
         ]
@@ -24,7 +23,6 @@
             [16, 32, 64, "All"]
         ]
     })
-<<<<<<< HEAD
 
     // users
     $('#staffDataTable').DataTable({
@@ -35,15 +33,21 @@
         ]
     })
 
-=======
     // customers table
-    $('#customersDataTable').DataTable(
-      {
+    $('#customersDataTable').DataTable({
         autoWidth: true,
         "lengthMenu": [
-          [16, 32, 64, -1],
-          [16, 32, 64, "All"]
+            [16, 32, 64, -1],
+            [16, 32, 64, "All"]
         ]
     })
->>>>>>> 0db528c182e0c94e15bf55e3e4e6a0d7b97ba007
+
+    // incoice table
+    $('#invoiceDataTable').DataTable({
+        autoWidth: true,
+        "lengthMenu": [
+            [16, 32, 64, -1],
+            [16, 32, 64, "All"]
+        ]
+    })
 })()

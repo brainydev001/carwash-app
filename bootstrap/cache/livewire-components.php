@@ -5,6 +5,7 @@
   'metrics.overview' => 'App\\Http\\Livewire\\Metrics\\Overview',
   'navigation.side-nav' => 'App\\Http\\Livewire\\Navigation\\SideNav',
   'navigation.top-nav' => 'App\\Http\\Livewire\\Navigation\\TopNav',
+  'reciepts.create-reciepts' => 'App\\Http\\Livewire\\Reciepts\\CreateReciepts',
   'sale-terminal.add-to-cart-modal' => 'App\\Http\\Livewire\\SaleTerminal\\AddToCartModal',
   'sale-terminal.checkout-form' => 'App\\Http\\Livewire\\SaleTerminal\\CheckoutForm',
   'services.add-body-type' => 'App\\Http\\Livewire\\Services\\AddBodyType',

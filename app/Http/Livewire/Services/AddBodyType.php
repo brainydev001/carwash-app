@@ -17,7 +17,7 @@ class AddBodyType extends Component
      * Validation rules
      */
     protected $rules = [
-        'price' => ['required', 'numeric']
+        'price' => ['required', 'numeric'] 
     ];
 
     public function mount($service)

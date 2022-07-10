@@ -8,11 +8,9 @@ use App\Models\BodyType;
 class AddToCartModal extends Component
 {
     public $service;
-    public $bodytype;
     
     public function mount($service)
     {
-        $bodytype = BodyType::all();
         $this->service = $service;
     }
 

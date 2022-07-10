@@ -17,7 +17,7 @@
         <div class="form-group">
             <label for="exampleInputEmail1">Expense Type</label>
             <input type="text" class="form-control  @error('type') is-invalid @enderror" wire:model="type" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="phone number">
+                placeholder="expense type">
             @error('type')
                 <span class="text-danger">
                     {{ $message }}

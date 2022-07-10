@@ -50,7 +50,7 @@ class SaleTerminalController extends Controller
             'phone_number' => 'required|string',
             'name' => 'required|string',
             'make' => 'required|string',
-            'model' => 'required|string'
+            'model' => 'required|string',
         ]);
 
         // check if customer exists
@@ -76,7 +76,7 @@ class SaleTerminalController extends Controller
             'code' => 200,
             'number' => date('-jny-Gi',time()),
             'price_id' => $price_id,
-            'isPaid' => true,
+            'isPaid' => false,
             'due_date' => date('Y-m-d H:i:s', time()),
             'created_by' => auth()->user()->id
         ]);

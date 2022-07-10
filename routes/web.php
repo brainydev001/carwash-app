@@ -87,6 +87,17 @@ Route::group(['middleware' => ['auth']], function(){
     });
 
     /**
+     * Documents routes
+     * 
+     */
+    Route::group([], function(){
+        Route::get('documents/manager','DocumentsController@index');
+        Route::get('invoices/manager','DocumentsController@getInvoice');
+        Route::get('recieps/manager','DocumentsController@getReciepts');
+        Route::get('single_invoice/{id}','DocumentsController@invoice');
+    });
+
+    /**
      * Mail routes
      * NOTE : has routes outside admin route group
      */
